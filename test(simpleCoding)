@@ -1,0 +1,27 @@
+
+import java.io.*;
+import java.util.Scanner;
+public class teset {
+
+    public static void main(String[] args) throws IOException {
+        Scanner input = new Scanner(System.in);
+        int a, b;
+        System.out.println("Enter num1");
+        a = input.nextInt();
+        System.out.println("Enter num2");
+        b = input.nextInt();
+        int onScreen = call(a,b);
+        System.out.println("Your answer is: " + onScreen);
+        check(onScreen);
+    }
+    public static int call(int a, int b){
+        int answer = a + b;
+        return answer;
+    }
+    public static boolean check(int call){
+        if (call > 50){
+            System.out.println("this number is too big!");
+        }
+        return true;
+    }
+}
